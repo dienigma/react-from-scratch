@@ -8,7 +8,7 @@ module.exports = {
     entry : './app/index.js',
     output :{
         path : path.resolve(__dirname, 'dist'),
-        filename:'index_bundle.js'
+        filename:'bundle.js'
     },
     module:{
         rules: [
@@ -21,7 +21,7 @@ module.exports = {
     mode : 'development',
     plugins: [
         new HtmlWebpackPlugin({
-          template: 'app/index.html'
+          template: './app/index.html'
         })
       ]
     }
